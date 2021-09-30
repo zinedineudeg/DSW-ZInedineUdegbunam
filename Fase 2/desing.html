@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=}, initial-scale=1.0">
     <title>Document</title>
 </head>
-<header><strong><h1>Etiquetas semánticas, CSS Grid</h1></strong></header>
+
 <body>
-    <nav >
+    <header>
+        <h1 style="text-align: center;">sintaxis y selectores, interaccion humano maquina</h1>
+    <nav style="padding: 20px;">
         <ul>
             <h1>Inicio</h1>
             <li>
@@ -35,31 +37,102 @@
             </li>
         </ul>
     </nav>
+</header>
    <section>
     <h2>Proposito del sitio</h2>
-    <p>En este Sitio encontraras informacion que se evidenciara por medio de recursos multimedia y articulos relacionados al tema de estiquetas semanticas, CSS grid, las cuales son parte del fundamento en el desarrollo de sitios web. </p>
+    <p>En este Sitio encontraras informacion que se evidenciara por medio de recursos multimedia y articulos relacionados al tema de sintaxis y selectores, interaccion humano maquina las cuales son parte del fundamento en el desarrollo de sitios web. </p>
     <br>
     <article>
-        <h3 style="text-align: center;">Etiquetas Semanticas</h3>
-        <p style="">En HTML5 actualmente se han implementaados una variedad de etiquetas semanticas las cuales son de utilidad para el desarrollo web ya que indican que contenido tiene esta misma; Tomemos como ejemplo la etiqueta <B> Div</B> o <B>B,</B> el div o division es para dividir un contenido de otro y la etiqueta B es mas precisa que la etiqueta STRONG (es la que un titulo o texto se resalte mas que los otros), la etiqueta B significa que el elemento que estara adentro sea negrita. <br> Las etiquetas semanticas son las que nos indican que contenido conforma nuestra pagina web una vez se halla enderizado por el navegador. <br> <h4>Etiquetas Semanticas Estructurales</h4><p> Estas etiquetas nos ayudan a comprender la estructura que contiene un documento HTML5</p> <br>Tomado de: <a style="text-decoration: none; color: rgb(20, 107, 107);" href="https://desarrolloweb.com/articulos/etiquetas-semanticas-html5.html">Etiquetas semanticas de HTML5</a> <br> <br>
-        <a style="text-decoration: none; color: rgb(20, 107, 107);" href="https://lc.fie.umich.mx/~rochoa/Manuales/WEB/HTML5_CSS3_JAVASCRIPT.pdf">El gran libro de HTML5,CCS3 y JavaScript</a>
-    
-    
+        <h3 style="text-align: center;">Sintaxis y Selectores</h3>
+        <p>En css las sintaxis y selectores son un conjunto de reglas las cuales llevan un selectory un bloque de declaraciones, estas se usan para darle estilo a los elemntos que estan dentro d ela estructura de html. 
+            <br>
+            <img style="padding: 40px 0;" src="/Fase 2/Multimedia/selector.gif" alt="Sintaxis del selector">
+            <br>
+            Por ejemplo si tenemos en nuestro documento html varios elemetos p, y llamamos en nuestra hoja de estilos css ese elemento y declaramos propiedades dentro de ella, esto hace que todos nuestros elementos  p obtengan esas propiedades, en pocas palabras actua como un selector universal para el elemento p.
+            <br>
+            veremos como se utilizan los selectores en css: 
+            <br>
+            <ul>
+                <li>
+                <h4>selector de elemento</h4>
+                <ul><p> Como explique en el ejemplo anterior un elemento es seleccionado como muestra la imagen:</p>
+                    <br>
+                    <img style="padding: 30px 0;" src="/Fase 2/Multimedia/elemnto p.jpeg" alt="ejemplo de la etiqueta p">
+                </ul>
+                </li>
+                <li>
+                    <h4>Selector de ID </h4>
+                    <ul>
+                        <p>
+                          El selector de id en css sse inicialaiza con el simbolo <b>(#)</b> esta id asociada a un elemento o clase debe ser unico para seleccionar un id espcifico.
+                        </p>
+                        <br>
+                        <img style="padding: 30px 0;" src="/Fase 2/Multimedia/id.jpeg" alt="ejemplo selector id">
+                    </ul>
+                </li>
+                <li>
+                    <h4>Selector clase</h4>
+                    <ul>
+                        <p>
+                         Se inicia con <b>.</b> y el nombre de la clase.
+                        </p>
+                        <br>
+                        <img style="padding: 30px 0;" src="/Fase 2/Multimedia/class.jpeg" alt="ejemplo selector clase ">
+                    </ul>
+                </li>
+                <li>
+                    <h4>Agrupacion de selectores </h4>
+                    <ul>
+                        <p>
+                         Cuando se tienen dos o mas elementos y queremos aplicarle los mismos estilos a cada uno de esos elementos, esto se puede hacer de dos formas como veremeos en en las sigueietes imagenes: 
+                        </p>
+                        <br>
+                        <img style="padding: 30px 0;" src="/Fase 2/Multimedia/g.jpeg" alt="">
+                        <p>para ahorrar lineas de codigo el desarrollador puede implementar esta Agrupacion: </p>
+                        <img style="padding: 30px 0;" src="/Fase 2/Multimedia/gc.jpeg" alt="">
+                    </ul>
+                </li>
+                <li>
+                    <h4>Comentarios </h4>
+                    <ul>
+                        <p>
+                         Como bien sabemmos que en todo lenguaje  los comentarios son fundamentales para el lector del codigo estos le pueden ayudar a comprender que hace el codigo, o si se es programador lo ayuda para dejar instanciado parte del codigo. en CSS los comentarios se indican de esta manera /* */
+
+                        </p>
+                        <br>
+                        <img style="padding: 30px 0;" src="/Fase 2/Multimedia/com.jpeg" alt="ejemplo selector clase ">
+                    </ul>
+                </li>
+
+        </ul>
+            
+            
+            
+        <br>
+        <p>
+            Tomado de: 
+            <a style="text-decoration: none; color: rgb(20, 107, 107);" href="https://lc.fie.umich.mx/~rochoa/Manuales/WEB/HTML5_CSS3_JAVASCRIPT.pdf">El gran libro de HTML5, CCS3 y JavaScript</a>
+        </p> 
+        
         </p>
-        <br>
-        <img src="/Fase 2/Multimedia/semantica-html.png" style="padding: auto; width: 600px; height: 400px;" alt="Etiquetas estructurales">
-        <br>
     </article>
-    <br>
     <article>
-        <h3 style="text-align: center;">CSS Grid</h3>
-        <p></p>
-        <img src="" alt="">
+        <h3 style="text-align: center; padding: 40px 0;">Interaccion Humano Maquina</h3>
+        <p>
+           Actualemente el el ser humano tiene una interaccion con la tecnologia, nos enfocaremos en los dispositivos de computo o computadores esta interaccion ayuda a los usuarios del dispositivo, esta interaccion busca que entender al usuario por medio sistemas los cuales les ayudan a realizar tareas (adaptarse a los requerimientos del usuario).
+        </p>
+        <img style="padding: 30px 0;" src="/Fase 2/Multimedia/hc.jfif" alt="Hombre frente a una laptop">
+        <p>Tomado de :
+            <a style="text-decoration: none; color: rgb(20, 107, 107);" href="https://www.buenastareas.com/ensayos/Interaccion-Humano-Computador/1836448.html#:~:text=La%20Interacci%C3%B3n%20Humano%E2%80%93Computadora%20%28HCI%20por%20sus%20siglas%20en,estar%20estructurados%20para%20facilitar%20el%20cumplimiento%20de%20">Humano-Computadora</a>
+        </p>
     </article>
     </section>
     <section>
-     <h4>Mockup</h4>
-     <img src="" alt="">
+        <aside>
+            <h4>Mockup</h4>
+            <img src="" alt="">
+        </aside>
+     
     </section>
    
    <hr>
