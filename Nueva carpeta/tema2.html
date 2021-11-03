@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tema2</title>
+    <link rel="stylesheet" href="styletemas.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            
+            <a class="titulo" href="index.html"><i class="fas fa-book-reader"></i> UNAD</a>
+            
+    
+                <ul Class="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="">Tematicas</a>
+                    <ul  class="submenu">
+                     <li><a href="tema1.html">tema 1</a></li>
+                     <li><a href="tema2.html">tema 2</a></li>
+                    </ul></li>
+                    <li><a href="">Recursos</a>
+                    <ul class="submenu">
+                        <li><a href="recurso1.html">recurso 1</a></li>
+                        <li><a href="">recurso 2</a></li>
+                    </ul></li>
+                    <li><a href="">Aprendizaje</a>
+                    <ul class="submenu">
+                        <li><a href="">aprendizaje 1</a></li>
+                        <li><a href="">aprendizaje 2</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="autor.html">Autor</a></li>
+                </ul>
+        </nav>
+        <div class="parrafo">
+            <p>Adentrandonos en el mundo del flexbox <br>
+            </p>
+            <a href="">volver</a>
+        </div>
+    </header>
+    <div class="content">
+        <section>
+            <p>
+                Como se menciono en el tema 1 el flexbox es el posicionamiento de contenido que uno le da a una pagina por medio de cajas flexibles las cuales se ordenan de una manera que tanto el desarrollador como el usuario logren ver un diseño agradable y mas que todo sea responsive. 
+                <img src="img/flex.png">
+                <cite>layout con flexbox</cite>
+            </p>
+            <p>
+                para empezar tenemos que pensar en términos de dos ejes, el eje principal y el eje cruzado. El eje principal está definido por la propiedad flex-direction, y el eje cruzado es perpendicular a este. Todo lo que hacemos con flexbox está referido a estos dos ejes.
+                <img src="img/flex1.png">
+                <cite>imagen flexbox</cite>
+               
+            </p>
+            
+        </section>
+      
+        <aside>
+
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Ffacebook.com%2FUniversidadUNAD%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=true&appId"  style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </aside>
+       
+    </div>
+    <div class="subtitulo"><h2>Eje principal</h2> </div>
+    <div class="one">
+        <div class="eje1">
+            
+            <p>En el eje principal trabajamos con flex-direction el cual tiene cuatro variables mas que son:</p>
+            <div class="item">
+                <p>row</p>
+                <p>row-reverse</p>
+                <p>column</p>
+                <p>column-reverse</p>
+            </div>
+            
+            <img src="img/ow.png">
+            <cite>flex-direction:row</cite>
+        </div>
+
+        <div class="eje2">
+            
+                <p>Si en el eje principal trabajamos con column o column-reverse el eje principal correrá desde el borde superior de la página hasta el final</p>
+            <img src="img/colum.png">
+            <cite>flex-direction:column</cite>
+        </div>
+    </div>
+    <div class="second">
+        <h2>Eje cruzado</h2>
+        <p>va perpendicular al eje principal, y por lo tanto si flex-direction (del eje principal) es row o row-reverse el eje cruzado irá por las columnas.</p>
+        <img src="img/row cruzado.png" >
+        <cite>flex-direction:row para el eje cruzado</cite>
+        <p>Si el eje principal es column o column-reverse entonces el eje cruzado corre a lo largo de las filas</p>
+        <img src="img/column cruzado.png" >
+        <cite>flex-direction:column para el eje cruzado</cite>
+    </div>
+    <div class="three">
+        
+        <div class="onebox">
+           <h2>Display:flex</h2>
+           <p>El area que posee un flexbox es llamada contendedor flex. Para crear un contenedor flex, establecemos la propiedad del área del contenedor display como flex o inline-flex. Tan pronto como hacemos esto, los hijos directos de este contenedor se vuelven ítems flex. <br> Es decir que los items se posicionaran uno al lado del otro.</p>
+           <img src="img/display flex.jpeg" >
+           <cite>Ejemplo display:flex;</cite>
+        </div>
+        <div class="twobox">
+            <h2>Flex-Direccion</h2>
+            <p>la propiedad flex-direction en el contenedor flex nos permite cambiar la dirección de cómo los ítems son desplegados, veremos la utilizacion del flex-direction con la propiedad row-reverse: </p>
+            <img src="img/row-reverse.jpeg" alt="">
+            <cite>Ejemplo de flex-direction:row-reverse;</cite>
+        </div>
+        
+        
+
+
+    </div>
+    <div class="four">
+        <div class="img1">
+            <h2>Aling-items</h2>
+            <img src="img/align items.jpeg">
+            <p>la propiedad align-items posee los siguientes atributos:</p>
+            <p>stretch</p>
+            <p>flex-start</p>
+            <p>center</p>
+            <p>flex-end </p>
+        </div>
+        <div class="img2">
+            <h2>justify-content</h2>
+        <img src="img/justify  content.jpeg">
+        <p>La propiedad justify-content es usada para alinear los ítems en el eje principal cuenta con otros valores como:</p>
+        <p>space-evenly</p>
+        <p>flex-start</p>
+        <p>flex-end</p>
+        <p> center</p>
+        <p>space-around</p>
+        <p>space-between</p>
+        </div>
+        <div class="img3">
+            <h2>flex</h2>
+        <img src="img/flexb.gif" >
+        </div>
+    </div>
+    
+    <div class="footer">
+       
+        <footer>
+            <i class="fas fa-book-reader"></i>
+            <address> Bogotá, Colombia</address>
+            <p>&copy;derechos reservados 2021</p>
+        
+
+        </footer>
+    </div>
+</body>
+</html>

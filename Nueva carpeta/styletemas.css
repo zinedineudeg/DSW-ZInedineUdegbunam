@@ -1,0 +1,471 @@
+*{
+    margin: 0;
+    padding:0px;
+    box-sizing: border-box;
+  }
+  body{
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  header{
+    
+    background-position: center;
+    background-image: url("logo-color-jpg.jpg");
+    height: 320px;
+    position:relative;
+    background-size: cover cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    animation: movimiento 13s infinite linear alternate;
+  }
+  @keyframes movimiento {
+    from {
+      background-position:top right;
+    }
+    to {
+      background-position: bottom left ;
+    }
+  }
+  header:before{
+  z-index: 0;
+  background: rgba(0, 0, 0, 0.589);
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  }
+  
+  nav{
+    width: 100%;
+    height: 50px;
+    background-color:rgb(0, 110, 255);
+    z-index: 1;
+    position:absolute;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    
+    
+  }
+  nav .titulo {
+   font-size: 30px;
+   font-weight: 900;
+   text-decoration: none;
+   color: #ccc;
+   padding: 10px;
+  }
+  nav ul{
+    list-style: none;
+    width: 600px;
+  }
+  .menu > li{
+  display: inline-block;
+  position: relative;
+  font-weight: 700;
+  font-size: 20px;
+  
+  }
+  .menu > li >a{
+    display: block;
+    padding: 15px 20px ;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+  }
+  .menu li a:hover{
+    color:rgb(253, 253, 253);
+    transition: all .4s;
+  }
+  .submenu{
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    text-decoration: none;
+    width:100%;
+    padding: 10px ;
+    visibility:hidden;
+    opacity: 0;
+    transition: opacity .5s;
+  }
+  .submenu li a{
+    display: block;
+    padding: 10px;
+    color: rgb(0, 225, 255);
+    text-decoration: none;
+    font-size: 15px;
+    transition: all .5s;
+    text-align: center;
+  }
+  .submenu li a:hover{
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  display: block;
+  }
+  .menu li:hover .submenu{
+    visibility: visible;
+    opacity: 1;
+    transition: all 3s;
+  }
+  .parrafo{
+    position:absolute;
+    margin: 70px auto;
+    display: block;
+    width: 400px;
+    padding: 10px;
+    align-items: center;
+  
+  }
+  .parrafo p{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: center;
+  
+  }
+  
+  .parrafo a{
+    background:none;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 800;
+    margin: 140px ;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    height: 100%;
+    width: 100px;
+    box-shadow: 0 4px 6px -1px rgb(0, 0, 0), 0 2px 4px -1px rgba(0, 0, 0.06);
+    letter-spacing: 3px;
+    text-align: center;
+    transition: all 2s;
+    text-transform: capitalize;
+  }
+  .parrafo a:hover{
+    background-color: rgba(65, 227, 255, 0.575);
+  }
+  .content{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+    
+  }
+  .content aside{
+    flex:30%;
+    padding: 20px;
+    height:100%;
+    display: block;
+  
+  }
+  .content section p{
+   color: rgb(0, 0, 0);
+   width: 50%;
+   margin: 20px;
+   height: 100%;
+   font-size: 15px;
+   display: block;
+   padding-top:20px ;
+   
+  }
+  .content section {
+    flex: 70%;
+    display: flex;
+    padding: 20px;
+    height: 300px;
+    position: relative;
+    
+  
+  }
+  section p img{
+    width: 100%;
+    height:100%;
+    border-radius:10px;
+    margin: auto;
+    margin-top: 10px;
+    display: block;
+    box-shadow: 0 4px 6px -1px rgb(185, 185, 185), 0 2px 4px -1px rgba(0, 0, 0.06);
+  }
+  section p video{
+    width: 100%;
+    align-items: center;
+    height:100%;
+    border-radius:10px;
+    margin-top: 10px;
+    box-shadow: 0 4px 6px -1px rgb(185, 185, 185), 0 2px 4px -1px rgba(0, 0, 0.06);
+    justify-content: center;
+  }
+  section h2{
+   color: rgb(0, 0, 0);
+   height: 20px;
+   font-size: 15px;
+   display:block;
+   position: absolute;
+   margin:20px;
+   text-transform: uppercase;
+   font-weight: 700;
+  }
+  section p cite{
+      font-size: 12px;
+      text-align:center;
+      display: block;
+      padding: 10px;
+      
+  }
+  
+  aside iframe{
+    width:362px;
+    height: 100%;
+    background-size: cover;
+    margin: 20px;
+  }
+  
+ 
+  .subtitulo{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+  .one{
+    display:flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    align-items:flex-start;
+    justify-content: center;
+  }
+  .one .eje1{
+    flex: 50%;
+    display: block;
+    padding: 20px;
+  }
+
+  .one .eje1 >p{
+    margin: 20px;
+    width: 100%;
+   
+  }
+  .item {
+    padding: 0px;
+    margin: 20px;
+    font-size: 15px;
+    display: block;
+  }
+  .one .eje2{
+    flex:50%;
+    display:block;
+    padding: 20px;
+  }
+  .one .eje2 p{
+    margin: 20px;
+    width: 100%;
+  }
+  .one img{
+    margin: auto;
+    display: block;
+  }
+  .one cite{
+    font-size: 12px;
+    display: block;
+    text-align: center;
+    margin: auto;
+
+}
+.second{
+  margin: 30px auto;
+  width: 800px;
+  display:block;
+  padding: 10px;
+
+}
+.second h2{
+  display:flex;
+  justify-content: center;
+  width:auto;
+  height: auto;
+  margin: auto;
+  padding: 10px;
+}
+.second p{
+  margin: 20px;
+  font-size: 15px;
+}
+.second img{
+  margin: auto;
+  display: block;
+
+}
+.second cite{
+  font-size: 12px;
+  display: flex;
+  justify-content:center;
+  width: auto;
+  padding: 10px;
+}
+.three{
+  width: 100%;
+  display:block;
+  justify-content: center;
+  
+
+}
+.onebox{
+  display: block;
+  width: 50%;
+  margin: 20px;
+  height: auto;
+ 
+  
+}
+.onebox h2{
+  padding: 20px;
+  display: block;
+  text-align: center;
+}
+.onebox p{
+  font-size: 15px;
+  padding: 10px;
+}
+.onebox img{
+  margin: auto;
+  display: block;
+}
+.onebox  cite{
+  font-size: 12px;
+  display: flex;
+  justify-content:center;
+  width: auto;
+  padding: 10px;
+}
+.twobox{
+  display: block;
+  margin: 30px auto;
+  width: 50%;
+  height: auto;
+
+  
+
+}
+.twobox h2{
+  padding: 20px;
+  display:block;
+  text-align: center;
+}
+.twobox p{
+  font-size: 15px;
+  padding: 10px;
+}
+.twobox img{
+  margin: auto;
+  display: block;
+}
+.twobox cite{
+  font-size: 12px;
+  display: flex;
+  justify-content:center;
+  width: auto;
+  padding: 10px;
+}
+.four{
+  width: 100%;
+  display: flex;
+
+  justify-content: center;
+}
+.four .img1{
+  flex: 1 ;
+  margin: 20px;
+}
+.four .img1 h2{
+  color: rgb(0, 0, 0);
+  display: block;
+  text-align: center;
+  align-items:center;
+  width:auto;
+  padding: 10px;
+}
+.four .img1 img{
+  margin: auto;
+  display: block;
+  width: 80%;
+}
+.four .img1 p{
+  padding: 10px;
+  font-size: 15px;
+}
+.four .img2{
+  flex:1 ;
+  margin: 20px;
+  
+}
+.four .img2 h2{
+  color: rgb(0, 0, 0);
+  display: block;
+  text-align: center;
+  align-items:center;
+  width:auto;
+  padding: 10px;
+}
+.four .img2 img{
+  margin: auto;
+  display: block;
+  width: 80%;
+}
+.four .img2 p{
+  padding: 10px;
+  font-size: 15px;
+}
+
+.four .img3{
+ 
+  flex: 1 ;
+  margin: 20px;
+}
+.four .img3 h2{
+  color: rgb(0, 0, 0);
+  display: block;
+  text-align: center;
+  align-items:center;
+  width:auto;
+  padding: 10px;
+}
+.four .img3 img{
+  margin: auto;
+  display: block;
+  width: 80%;
+}
+
+
+.footer footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  background-color:rgb(0, 110, 255);
+  color: rgb(255, 255, 255);
+}
+.footer address {
+  padding: 10px;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 12px;
+  font-weight: 900;
+}
+.footer p{
+  padding: 10px;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+  
+
+
+
