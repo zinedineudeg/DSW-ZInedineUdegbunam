@@ -334,7 +334,8 @@ section .icon a i:hover{
   font-weight: 900;
 }
 .navbar{
-height: 100px;
+height: 60px;
+justify-content: space-between;
 }
 .navbar-nav a{
   font-size: 19px;
